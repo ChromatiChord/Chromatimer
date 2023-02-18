@@ -9,10 +9,10 @@ def some_function():
   ...
 ```
 
-When the function *'somefunction()'* is run, the decorator will output:
+When the function *'somefunction()'* is executed, the decorator will output:
 ```
 Function 'some_function' took 2.175s.
 ```
 
 The decorator timer also has the optional parameter 'interval', which changes the time interval the decorator outputs.  
-Acceptable inputs from interval include: ["s","ms","µs","ns"]
+Available inputs for interval include: ["s","ms","µs","ns"]
