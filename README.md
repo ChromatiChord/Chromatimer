@@ -3,6 +3,7 @@ A simple python decorator that can be used to easily time your functions (with m
 Usage:
 ```
 from decoratortimer import decorator_timer
+
 @decorator_timer()
 def some_function():  
   ...
