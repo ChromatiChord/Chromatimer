@@ -1,5 +1,5 @@
 ﻿# PythonTimerDecorator
-A simple python decorator that can be used to easily time your functions (with minimal extra code).  
+A simple python decorator that can be used to easily measure and output function execution time (with minimal extra code).  
 Usage:
 ```
 from decoratortimer import decorator_timer
