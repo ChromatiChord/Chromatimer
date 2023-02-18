@@ -19,6 +19,6 @@ def decorator_timer(interval='s'):
                 if interval != "s":
                     raise Exception("Decorator timer input error. Accepted values: [\"s\",\"ms\",\"µs\",\"ns\"]")
             
-            print(f"Function \'{func.__name__}\' took {round(total_time, 4)}{interval}.")
+            print(f"Function \'{func.__name__}\' took {round(total_time, 3)}{interval}.")
         return wrapper
     return decorator
