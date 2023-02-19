@@ -1,10 +1,10 @@
-﻿# PythonTimerDecorator
+﻿# Chromatimer
 A simple python decorator that can be used to easily measure and output function execution time (with minimal extra code).  
 Usage:
 ```
-from decoratortimer import decorator_timer
+from chromatimer import chromatimer
 
-@decorator_timer()
+@chromatimer()
 def some_function():  
   time.sleep(0.17515731)
 ```
@@ -19,7 +19,7 @@ The parameter *'interval'* changes the time interval the decorator outputs.
 Available inputs for interval include: ["s", "ms", "µs", "ns"].  
 Usage:
 ```
-@decorator_timer(interval='ms')
+@chromatimer(interval='ms')
 def some_function():  
   time.sleep(0.17515731)
 ```
@@ -30,7 +30,7 @@ Function 'some_function' took 1751.573ms.
 The parameter *'decimals'* changes the number of decimal places the decorator outputs.  
 Usage:
 ```
-@decorator_timer(decimals=5)
+@chromatimer(decimals=5)
 def some_function():  
   time.sleep(0.17515731)
 ```
