@@ -17,8 +17,12 @@ def decorator_timer(interval='s', decimals=3):
                 total_time *= 1_000_000_000
             else:
                 if interval != "s":
-                    raise Exception("Decorator timer input error. Accepted values: [\"s\",\"ms\",\"µs\",\"ns\"]")
+                    raise Exception("Decorator timer \'interval\' error. Accepted values: [\"s\",\"ms\",\"µs\",\"ns\"].")
             
+            if not isinstance(decimals, int) or decimals < 0:
+                raise Exception("Decorator timer \'decimals\' error. Must be an integer greater than 0.")
+
             print(f"Function \'{func.__name__}\' took {round(total_time, decimals)}{interval}.")
         return wrapper
     return decorator
+    
