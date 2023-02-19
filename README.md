@@ -6,7 +6,7 @@ from decoratortimer import decorator_timer
 
 @decorator_timer()
 def some_function():  
-  ...
+  time.sleep(0.17515731)
 ```
 
 When the function *'somefunction()'* is executed, the decorator will output:
@@ -21,7 +21,7 @@ Usage:
 ```
 @decorator_timer(interval='ms')
 def some_function():  
-  ...
+  time.sleep(0.17515731)
 ```
 Would change the previous output to:
 ```
@@ -32,7 +32,7 @@ Usage:
 ```
 @decorator_timer(decimals=5)
 def some_function():  
-  ...
+  time.sleep(0.17515731)
 ```
 Would change the previous output to:
 ```
