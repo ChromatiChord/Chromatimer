@@ -16,7 +16,7 @@ Function 'some_function' took 0.175s.
 
 The decorator timer also has two optional parameters: *'interval'* and *'decimals'*.  
 The parameter *'interval'* changes the time interval the decorator outputs.  
-Available inputs for interval include: ["s","ms","µs","ns"].  
+Available inputs for interval include: ["s", "ms", "µs", "ns"].  
 Usage:
 ```
 @decorator_timer(interval='ms')
