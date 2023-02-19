@@ -9,7 +9,7 @@ def decorator_timer(interval='s', decimals=3):
             func(*args, **kwargs)
             total_time = perf_counter() - start_time
 
-            # determines what time inteval should be displayed
+            # determines what time interval should be displayed
             if interval == 'ms':
                 total_time *= 1_000
             elif interval == 'µs':
