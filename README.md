@@ -14,7 +14,8 @@ When the function *'some_function()'* is executed, the decorator will output:
 Function 'some_function' took 0.175s.
 ```
 
-The decorator timer also has two optional parameters: *'interval'* and *'decimals'*.  
+The decorator timer also has the optional parameters: *'interval'*, *'decimals'*, *'output'*, and *'history'*.  
+
 The parameter *'interval'* changes the time interval the decorator outputs.  
 Available inputs for interval include: ["s", "ms", "µs", "ns"].  
 Usage:
