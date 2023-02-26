@@ -60,17 +60,22 @@ If a dictionary is provided within the *'history'* argument, any time recorded b
 Example:
 ```
 history_dict = {}
+time = 1.1
 
-@chromatimer(interval='ms', output=False, history=history_dict)
+@chromatimer(output=False, history=history_dict)
 def some_function():  
-  time.sleep(0.17515731)
+  time.sleep(time)
+  
+some_function()
+time = 2.3
+some_function()
 ```
 When the function has been executed, the *history_dict* variable will be set to:
 ```
 {
   some_function: {
-    'interval': 'ms',
-    'times': [1751.573]
+    'interval': 's',
+    'times': [1.1, 2.3]
   }
 }
 ```
