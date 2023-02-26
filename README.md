@@ -47,7 +47,7 @@ Function 'some_function' took 0.17516s.
 
 
 ## Output
-Decorator output can be disabled completely using the *'output'* argument
+Decorator output can be disabled completely using the *'output'* argument.
 ```
 @chromatimer(output=False)
 def some_function():  
