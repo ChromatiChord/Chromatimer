@@ -16,7 +16,8 @@ Function 'some_function' took 0.175s.
 
 The decorator timer also has the optional parameters: *'interval'*, *'decimals'*, *'output'*, and *'history'*.  
 
-### Interval
+
+## Interval
 The parameter *'interval'* changes the time interval the decorator outputs.  
 Available inputs for interval include: ["s", "ms", "µs", "ns"].  
 Usage:
@@ -30,7 +31,8 @@ Would change the previous output to:
 Function 'some_function' took 1751.573ms.
 ```
 
-### Decimals
+
+## Decimals
 The parameter *'decimals'* changes the number of decimal places the decorator outputs.  
 Usage:
 ```
@@ -43,7 +45,8 @@ Would change the previous output to:
 Function 'some_function' took 0.17516s.
 ```
 
-### Output
+
+## Output
 Decorator output can be disabled completely using the *'output'* argument
 ```
 @chromatimer(output=False)
@@ -51,7 +54,8 @@ def some_function():
   ...
 ```
 
-### History
+
+## History
 If a dictionary is provided within the *'history'* argument, any time recorded by the decorator will be added to that dictionary.  
 Example:
 ```
