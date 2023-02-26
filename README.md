@@ -38,3 +38,29 @@ Would change the previous output to:
 ```
 Function 'some_function' took 0.17516s.
 ```
+
+Decorator output can be disabled completely using the *'output'* argument
+```
+@chromatimer(output=False)
+def some_function():  
+  ...
+```
+
+If a dictionary is provided within the *'history'* argument, any time recorded by the decorator will be added to that dictionary.  
+Example:
+```
+history_dict = {}
+
+@chromatimer(interval='ms', output=False, history=history_dict)
+def some_function():  
+  time.sleep(0.17515731)
+```
+When the function has been executed, the *history_dict* variable will be set to:
+```
+{
+  some_function: {
+    'interval': 'ms',
+    'times': [1751.573]
+  }
+}
+```
