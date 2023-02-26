@@ -9,7 +9,7 @@ def some_function():
   time.sleep(0.17515731)
 ```
 
-When the function *'somefunction()'* is executed, the decorator will output:
+When the function *'some_function()'* is executed, the decorator will output:
 ```
 Function 'some_function' took 0.175s.
 ```
