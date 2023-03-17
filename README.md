@@ -60,14 +60,14 @@ If a dictionary is provided within the *'history'* argument, any time recorded b
 Example:
 ```
 history_dict = {}
-time = 1.1
+time_quantity = 1.1
 
 @chromatimer(output=False, history=history_dict)
 def some_function():  
-  time.sleep(time)
+  time.sleep(time_quantity)
   
 some_function()
-time = 2.3
+time_quantity = 2.3
 some_function()
 ```
 When the function has been executed, the *history_dict* variable will be set to:
