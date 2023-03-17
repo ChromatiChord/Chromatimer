@@ -70,7 +70,7 @@ some_function()
 time_quantity = 2.3
 some_function()
 ```
-When the function has been executed, the *history_dict* variable will be set to:
+When the function(s) has been executed, the *history_dict* variable will be set to:
 ```
 {
   some_function: {
